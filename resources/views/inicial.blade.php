@@ -25,7 +25,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #404040;">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="{{ asset('imagens/logoAtualizada.png') }}" alt="Logo do Escritório" class="logo-grande">
+                <img src="{{ asset('imagens/logoAtualizada.png') }}" alt="Logo do Escritório" style="width: 95px; height: 95px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -113,8 +113,8 @@
                     </p>
                 </div>
                 <div class="col-md-6 text-center">
-                    <img src="caminho-da-imagem/contador.jpg" alt="Contador da Contabilidade Angelos"
-                        class="img-fluid rounded shadow">
+                    <img src="{{asset('imagens/contador.png')}}" alt="Contador da Contabilidade Angelos"
+                        class="img-fluid rounded shadow" style="width: 400px; height: 400px;">
                 </div>
             </div>
 
@@ -165,7 +165,7 @@
 
     <section id="localizacao" class="conteudo location-section bg-secondary-theme py-5">
         <div class="container">
-            <h2 class="section-title text-accent-theme">Onde Estamos</h2>
+            <h2 class="section-title text-accent-theme" style="color:white">Onde Estamos</h2>
             <div class="row align-items-center">
 
                 <div class="col-md-6 mb-4 mb-md-0">

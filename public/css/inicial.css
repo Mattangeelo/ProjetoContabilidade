@@ -171,7 +171,7 @@
     }
 
     .text-accent-theme {
-        color: #fcb900 !important;
+        color: #ffffff !important;
         /* Cor dourada */
     }
 
@@ -225,10 +225,4 @@
         border-color: #28a745;
         box-shadow: 0 0 10px rgba(40, 167, 69, 0.3);
         outline: none;
-    }
-
-    .logo {
-        max-width: 100%;
-        width: 300px;
-        height: auto;
     }
