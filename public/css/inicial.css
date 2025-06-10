@@ -1,0 +1,234 @@
+    body {
+        font-family: 'Montserrat', sans-serif;
+        color: #333;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+        background-color: #404040 !important;
+        /* Nova cor da navbar */
+    }
+
+    .navbar-brand {
+        padding: 0 !important;
+        /* Remove padding padrão do brand */
+    }
+
+    .navbar-brand img {
+        height: 40px;
+        /* Ajuste a altura conforme necessário */
+    }
+
+    .nav-link {
+        color: #fff !important;
+    }
+
+    .nav-link:hover {
+        color: #fcb900 !important;
+        /* Cor dourada no hover */
+    }
+
+    .img-rounded-custom {
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .img-rounded-custom:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/hero-contabilidade.jpg') center center no-repeat;
+        background-size: cover;
+        color: #fff;
+        text-align: center;
+        padding: 100px 0;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        color: #fcb900;
+        /* Cor dourada */
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+    .btn-primary-custom {
+        background-color: #28a745;
+        /* Verde Bootstrap */
+        border-color: #28a745;
+        color: #fff;
+    }
+
+    .btn-primary-custom:hover {
+        background-color: #1e7e34;
+        border-color: #1c7430;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+        color: #000;
+    }
+
+    .services-section,
+    .contact-section {
+        padding: 80px 0;
+        background-color: #fff;
+    }
+
+    .location-section {
+        padding: 80px 0;
+        background-color: #8fbc8f !important;
+    }
+
+    .service-item {
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .service-item h3 {
+        color: #fcb900;
+        /* Cor dourada */
+    }
+
+    .location-map iframe {
+        width: 100%;
+        height: 300px;
+        border: 0;
+    }
+
+    .social-links a {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 1.5rem;
+        color: #000;
+    }
+
+    .social-links a:hover {
+        color: #fcb900;
+        /* Cor dourada no hover */
+    }
+
+    .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .whatsapp-button a {
+        display: block;
+        background-color: #25d366;
+        /* Cor padrão do WhatsApp */
+        color: #fff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        font-size: 1.5rem;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .whatsapp-button a:hover {
+        background-color: #128c7e;
+    }
+
+    /* Cores Temáticas Atualizadas */
+    .bg-primary-theme {
+        background-color: #000 !important;
+        /* Preto (usado em outras seções) */
+        color: #fff !important;
+    }
+
+    .text-primary-theme {
+        color: #000 !important;
+        /* Preto */
+    }
+
+    .text-secondary-theme {
+        color: #8fbc8f !important;
+        /* Verde Folha */
+    }
+
+    .bg-secondary-theme {
+        background-color: #8fbc8f !important;
+        width: 100%;
+        /* Verde Folha */
+    }
+
+    .text-accent-theme {
+        color: #fcb900 !important;
+        /* Cor dourada */
+    }
+
+    .bg-accent-theme {
+        background-color: #fcb900 !important;
+        /* Cor dourada */
+        color: #000 !important;
+    }
+
+    .mapa-container {
+        border-radius: 20px;
+        overflow: hidden;
+        border: 4px solid #fcb900;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        margin-top: 20px;
+        width: 100%;
+        height: 350px;
+        /* altura definida aqui */
+    }
+
+    .mapa-container iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
+    }
+
+    .custom-form {
+        background-color: #f8f9fa;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-input {
+        border-radius: 10px;
+        border: 2px solid #fcb900;
+        padding: 12px 16px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        background-color: #fff;
+        color: #333;
+    }
+
+    .custom-input::placeholder {
+        color: #aaa;
+        font-style: italic;
+    }
+
+    .custom-input:focus {
+        border-color: #28a745;
+        box-shadow: 0 0 10px rgba(40, 167, 69, 0.3);
+        outline: none;
+    }
+
+    .logo {
+        max-width: 100%;
+        width: 300px;
+        height: auto;
+    }
