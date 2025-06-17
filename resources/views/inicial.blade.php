@@ -17,17 +17,7 @@
         .conteudo.ativo {
             display: block;
         }
-        
-        .carousel-container {
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        .carousel-inner img {
-            height: 700px;
-            object-fit: cover;
-        }
+    
         
     </style>
 </head>
@@ -72,28 +62,14 @@
                 <div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="{{ asset('imagens/imposto.png') }}" class="d-block w-100" alt="Contabilidade Geral">
-                            <div class="carousel-caption bg-dark bg-opacity-50 rounded">
-                                <h5 class="text-accent-theme">Contabilidade Geral</h5>
-                                <p class="text-white">Mantenha suas finanças em ordem com nossa contabilidade geral
-                                    completa.</p>
-                            </div>
+                            <img src="{{ asset('imagens/imposto.png') }}" class="d-block w-100" alt="Contabilidade Geral">  
                         </div>
                         <div class="carousel-item">
-                            <img src="{{ asset('imagens/empresa.png') }}" class="d-block w-100" alt="Assessoria Fiscal">
-                            <div class="carousel-caption bg-dark bg-opacity-50 rounded">
-                                <h5 class="text-accent-theme">Assessoria Fiscal e Tributária</h5>
-                                <p class="text-white">Planejamento tributário inteligente para otimizar seus resultados.</p>
-                            </div>
+                            <img src="{{ asset('imagens/empresa.png') }}" class="d-block w-100" alt="Assessoria Fiscal">                           
                         </div>
                         <div class="carousel-item">
                             <img src="{{ asset('imagens/consultoria.png') }}" class="d-block w-100"
                                 alt="Consultoria Financeira">
-                            <div class="carousel-caption bg-dark bg-opacity-50 rounded">
-                                <h5 class="text-accent-theme">Consultoria Financeira</h5>
-                                <p class="text-white">Estratégias financeiras personalizadas para o crescimento do seu
-                                    negócio.</p>
-                            </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel"
