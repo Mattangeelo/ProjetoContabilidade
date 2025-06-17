@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "razao_social": "Exemplo empresa ltda",
+        "cnpj": "99.189.469\/0001-88",
+        "email": "empresa@email.com",
+        "mensalidade": "250",
+        "cnae": "8211-3\/00",
+        "categoria_empresa": "simples_Nacional",
+        "representante": "Ze da silva",
+        "cpf_representante": "782.472.600-26"
+    },
+    {
+        "id": 10,
+        "razao_social": "Daniela e Isabel Telecom ME",
+        "cnpj": "50.348.311\/0001-14",
+        "email": "debora.familiacristan@hotmail.com",
+        "mensalidade": "250",
+        "cnae": "16.16-11\/5",
+        "categoria_empresa": "simples_Nacional",
+        "representante": "Daniela Alves da Silva",
+        "cpf_representante": "115.643.609-54"
+    },
+    {
+        "id": 10,
+        "razao_social": "thay lltda",
+        "cnpj": "14.020.187\/0001-08",
+        "email": "joao.silva@example.com",
+        "mensalidade": "500",
+        "cnae": "82.11-30\/0",
+        "categoria_empresa": "simples_Nacional",
+        "representante": "Ze da silva",
+        "cpf_representante": "782.472.600-26"
+    },
+    {
+        "id": 10,
+        "razao_social": "Lincon",
+        "cnpj": "08.057.908\/0001-43",
+        "email": "joao.silva@example.com",
+        "mensalidade": "500",
+        "cnae": "18.86-16\/1",
+        "categoria_empresa": "lucro_Presumido",
+        "representante": "Lincon",
+        "cpf_representante": "364.745.650-04"
+    },
+    {
+        "id": 10,
+        "razao_social": "Isa",
+        "cnpj": "33.222.444\/0001-20",
+        "email": "isa@email.com",
+        "mensalidade": "250",
+        "cnae": "65.46-41",
+        "categoria_empresa": "simples_Nacional",
+        "representante": "Isa",
+        "cpf_representante": "274.011.810-45"
+    }
+]

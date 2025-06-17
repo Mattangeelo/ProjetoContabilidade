@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "nome": "Matheus Angelo",
+        "email": "admin@admin.com",
+        "senha": "$2y$12$vY6mOQoBYOJx9Rs.tRvHueF\/uZSXZg9ruy1N.2\/OQJOsq.fIrFadC",
+        "admin": true
+    }
+]
