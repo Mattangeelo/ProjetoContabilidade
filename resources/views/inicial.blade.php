@@ -158,15 +158,15 @@
             <div class="row align-items-center">
 
                 <div class="col-md-6 mb-4 mb-md-0">
-                    <p class="fs-5" style="color:#8fbc8f">
+                    <p class="fs-5" style="color:#578657">
                         Nosso escritório está de portas abertas para receber você com toda a atenção que merece.
                         Venha tomar um café conosco e conhecer mais sobre como podemos ajudar seu negócio!
                     </p>
-                    <address class="fw-bold" style="color:#8fbc8f">
+                    <address class="fw-bold" style="color:#578657">
                         R. Laurindo Borges, 1984<br>
                         Campo Mourão – PR, 87303-240
                     </address>
-                    <p style="color:#8fbc8f">Será um prazer atendê-lo pessoalmente!</p>
+                    <p style="color:#578657">Será um prazer atendê-lo pessoalmente!</p>
                 </div>
 
                 <div class="col-md-6">
