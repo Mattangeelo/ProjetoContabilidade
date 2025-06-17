@@ -6,20 +6,17 @@
         padding: 0;
     }
 
-    /* Navbar Styles */
     .navbar {
         background-color: #404040 !important;
-        /* Nova cor da navbar */
+        
     }
 
     .navbar-brand {
         padding: 0 !important;
-        /* Remove padding padrão do brand */
     }
 
     .navbar-brand img {
         height: 40px;
-        /* Ajuste a altura conforme necessário */
     }
 
     .nav-link {
@@ -28,7 +25,6 @@
 
     .nav-link:hover {
         color: #fcb900 !important;
-        /* Cor dourada no hover */
     }
 
     .img-rounded-custom {
@@ -54,7 +50,6 @@
         font-size: 3.5rem;
         margin-bottom: 20px;
         color: #fcb900;
-        /* Cor dourada */
     }
 
     .hero p {
@@ -64,7 +59,6 @@
 
     .btn-primary-custom {
         background-color: #28a745;
-        /* Verde Bootstrap */
         border-color: #28a745;
         color: #fff;
     }
@@ -101,7 +95,6 @@
 
     .service-item h3 {
         color: #fcb900;
-        /* Cor dourada */
     }
 
     .location-map iframe {
@@ -119,7 +112,6 @@
 
     .social-links a:hover {
         color: #fcb900;
-        /* Cor dourada no hover */
     }
 
     .whatsapp-button {
@@ -132,7 +124,6 @@
     .whatsapp-button a {
         display: block;
         background-color: #25d366;
-        /* Cor padrão do WhatsApp */
         color: #fff;
         border-radius: 50%;
         width: 60px;
@@ -147,37 +138,31 @@
         background-color: #128c7e;
     }
 
-    /* Cores Temáticas Atualizadas */
     .bg-primary-theme {
         background-color: #000 !important;
-        /* Preto (usado em outras seções) */
         color: #fff !important;
     }
 
     .text-primary-theme {
         color: #000 !important;
-        /* Preto */
     }
 
     .text-secondary-theme {
         color: #8fbc8f !important;
-        /* Verde Folha */
+
     }
 
     .bg-secondary-theme {
-        background-color: #8fbc8f !important;
+        background-color: #ffffff !important;
         width: 100%;
-        /* Verde Folha */
     }
 
     .text-accent-theme {
-        color: #ffffff !important;
-        /* Cor dourada */
+        color: #8fbc8f !important;
     }
 
     .bg-accent-theme {
         background-color: #fcb900 !important;
-        /* Cor dourada */
         color: #000 !important;
     }
 
@@ -189,7 +174,6 @@
         margin-top: 20px;
         width: 100%;
         height: 350px;
-        /* altura definida aqui */
     }
 
     .mapa-container iframe {
@@ -225,4 +209,60 @@
         border-color: #28a745;
         box-shadow: 0 0 10px rgba(40, 167, 69, 0.3);
         outline: none;
+    }
+
+    footer {
+        background-color: #404040;
+        color: white;
+        padding: 40px 0 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .footer-logo img {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+
+    .footer-links h5 {
+        color: #fcb900;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    .footer-links ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+        color: #fcb900;
+    }
+
+    .social-icons a {
+        color: white;
+        font-size: 24px;
+        margin-right: 15px;
+        transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+        color: #fcb900;
+    }
+
+    .copyright {
+        border-top: 1px solid #555;
+        padding-top: 20px;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 14px;
     }

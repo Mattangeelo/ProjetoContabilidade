@@ -22,21 +22,21 @@
 <body style="background-color: #f8f9fa;">
 
     <div class="d-flex">
-        <!-- Sidebar -->
         <div id="sidebar" class="bg-dark text-white p-3 vh-100 position-fixed" style="width: 250px;">
             <h4 class="fw-bold mb-4">Menu</h4>
             <ul class="nav flex-column">
                 <li class="nav-item"><a href="{{route('admin')}}" class="nav-link text-white">Dashboard</a></li>
-                <li class="nav-item"><a href="{{route('CadastrarCliente')}}" class="nav-link text-white">Clientes</a></li>
-                <li class="nav-item"><a href="{{route('cadastrarAtividade')}}" class="nav-link text-white">Atividades</a></li>
+                <li class="nav-item"><a href="{{route('CadastrarCliente')}}" class="nav-link text-white">Clientes</a>
+                </li>
+                <li class="nav-item"><a href="{{route('cadastrarAtividade')}}"
+                        class="nav-link text-white">Atividades</a></li>
                 <li class="nav-item"><a href="{{route('logout')}}" class="nav-link text-white">Sair</a></li>
             </ul>
         </div>
 
-        <!-- Conteúdo -->
+
         <div class="flex-grow-1" style="margin-left: 250px; transition: margin-left 0.3s;" id="main-content">
             <div class="container py-4">
-                <!-- Botão Hamburguer -->
                 <button class="btn btn-outline-secondary mb-3" id="toggleSidebar">
                     ☰
                 </button>
@@ -48,8 +48,6 @@
 
                 <div class="row g-4">
 
-
-                    <!-- Clientes -->
                     <div class="card shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Clientes</h5>
@@ -71,7 +69,6 @@
                             <div class="mt-3">
                                 <nav>
                                     <ul class="pagination">
-                                        <!-- Paginação simulada -->
                                         <li class="page-item disabled"><a class="page-link" href="#">Anterior</a>
                                         </li>
                                         <li class="page-item active"><a class="page-link" href="#">1</a></li>
@@ -87,7 +84,6 @@
                         </div>
                     </div>
 
-                    <!-- Faturamento -->
                     <div class="card shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Faturamento Mensal</h5>
@@ -98,7 +94,6 @@
                         </div>
                     </div>
 
-                    <!-- Atividades -->
                     <div class="card shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Atividades</h5>
@@ -111,13 +106,13 @@
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <span class="badge me-2 
-                                                @if($atividade['status'] === 'concluido')
-                                                    bg-success
-                                                @elseif($atividade['status'] === 'cancelado')
-                                                    bg-danger
-                                                @else
-                                                    bg-warning
-                                                @endif">
+                                                    @if($atividade['status'] === 'concluido')
+                                                        bg-success
+                                                    @elseif($atividade['status'] === 'cancelado')
+                                                        bg-danger
+                                                    @else
+                                                        bg-warning
+                                                    @endif">
                                                 {{ ucfirst($atividade['status']) }}
                                             </span>
                                             <a href="{{ route('showAtividade', ['id' => Crypt::encryptString($atividade['id'])]) }}"
@@ -131,12 +126,12 @@
                                 @endforelse
                             </ul>
                             <div class="text-end mt-3">
-                                <a href="{{route('cadastrarAtividade')}}" class="btn btn-success">Cadastrar Atividade</a>
+                                <a href="{{route('cadastrarAtividade')}}" class="btn btn-success">Cadastrar
+                                    Atividade</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Relatórios -->
                     <div class="card shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Gerar Relatório</h5>
@@ -156,11 +151,8 @@
             </div>
         </div>
     </div>
-    </div>
+    
 
-    </div>
-
-    <!-- Script para o botão hamburguer -->
     <script>
         const toggleBtn = document.getElementById('toggleSidebar');
         const sidebar = document.getElementById('sidebar');

@@ -19,8 +19,10 @@
             <h4 class="fw-bold mb-4">Menu</h4>
             <ul class="nav flex-column">
                 <li class="nav-item"><a href="{{route('admin')}}" class="nav-link text-white">Dashboard</a></li>
-                <li class="nav-item"><a href="{{route('CadastrarCliente')}}" class="nav-link text-white">Clientes</a></li>
-                <li class="nav-item"><a href="{{route('cadastrarAtividade')}}" class="nav-link text-white">Atividades</a></li>
+                <li class="nav-item"><a href="{{route('CadastrarCliente')}}" class="nav-link text-white">Clientes</a>
+                </li>
+                <li class="nav-item"><a href="{{route('cadastrarAtividade')}}"
+                        class="nav-link text-white">Atividades</a></li>
                 <li class="nav-item"><a href="{{route('logout')}}" class="nav-link text-white">Sair</a></li>
             </ul>
         </div>
@@ -43,72 +45,79 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label class="form-label">Razão Social</label>
-                                    <input type="text" name="razao_social" class="form-control" required>
+                                    <input type="text" name="razao_social" class="form-control">
+                                    @error('razao_social')
+                                        <div class="text-danger mt-1">{{ $message }}</div>
+                                    @enderror
                                 </div>
-                                @error('razao_social')
-                                    <div class="text-danger mt-1">{{ $message }}</div>
-                                @enderror
 
                                 <div class="col-md-6">
                                     <label class="form-label">CNPJ</label>
-                                    <input type="text" id="cnpj" name="cnpj" class="form-control" required>
+                                    <input type="text" id="cnpj" name="cnpj" class="form-control">
+                                    @error('cnpj')
+                                        <div class="text-danger mt-1">{{ $message }}</div>
+                                    @enderror
                                 </div>
-                                @error('cnpj')
-                                    <div class="text-danger mt-1">{{ $message }}</div>
-                                @enderror
+
 
                                 <div class="col-md-6">
                                     <label class="form-label">Email</label>
-                                    <input type="email" name="email" class="form-control" required>
+                                    <input type="email" name="email" class="form-control">
+                                    @error('email')
+                                        <div class="text-danger mt-1">{{ $message }}</div>
+                                    @enderror
                                 </div>
-                                @error('email')
-                                    <div class="text-danger mt-1">{{ $message }}</div>
-                                @enderror
+
 
                                 <div class="col-md-6">
                                     <label class="form-label">Mensalidade (R$)</label>
-                                    <input type="number" step="0.01" name="mensalidade" class="form-control" required>
+                                    <input type="number" step="0.01" name="mensalidade" class="form-control">
+                                    @error('mensalidade')
+                                        <div class="text-danger mt-1">{{ $message }}</div>
+                                    @enderror
                                 </div>
-                                @error('mensalidade')
-                                    <div class="text-danger mt-1">{{ $message }}</div>
-                                @enderror
+
 
                                 <div class="col-md-6">
                                     <label class="form-label">CNAE</label>
-                                    <input type="text" name="cnae" class="form-control" required>
+                                    <input type="text" name="cnae" class="form-control">
+                                    @error('cnae')
+                                        <div class="text-danger mt-1">{{ $message }}</div>
+                                    @enderror
                                 </div>
-                                @error('cnae')
-                                    <div class="text-danger mt-1">{{ $message }}</div>
-                                @enderror
+
 
                                 <div class="col-md-6">
                                     <label class="form-label">Categoria da Empresa</label>
-                                    <select name="categoria_empresa" class="form-select" required>
+                                    <select name="categoria_empresa" class="form-select">
                                         <option value="simples_Nacional">Simples Nacional</option>
                                         <option value="lucro_Presumido">Lucro Presumido</option>
                                         <option value="lucro_Real">Lucro Real</option>
                                         <option value="mei">MEI</option>
                                     </select>
+                                    @error('categoria_empresa')
+                                        <div class="text-danger mt-1">{{ $message }}</div>
+                                    @enderror
                                 </div>
-                                @error('categoria_empresa')
-                                    <div class="text-danger mt-1">{{ $message }}</div>
-                                @enderror
+
 
                                 <div class="col-md-6">
                                     <label class="form-label">Representante</label>
-                                    <input type="text" name="representante" class="form-control" required>
+                                    <input type="text" name="representante" class="form-control">
+                                    @error('representante')
+                                        <div class="text-danger mt-1">{{ $message }}</div>
+                                    @enderror
                                 </div>
-                                @error('representante')
-                                    <div class="text-danger mt-1">{{ $message }}</div>
-                                @enderror
+
 
                                 <div class="col-md-6">
                                     <label class="form-label">CPF do Representante</label>
-                                    <input type="text" id="cpf" name="cpf_representante" class="form-control" required>
+                                    <input type="text" id="cpf" name="cpf_representante" class="form-control">
+                                    @error('cpf_representante')
+                                        <div class="text-danger mt-1">{{ $message }}</div>
+                                    @enderror
                                 </div>
-                                @error('cpf_representante')
-                                    <div class="text-danger mt-1">{{ $message }}</div>
-                                @enderror
+
                             </div>
 
                             <div class="text-end mt-4">

@@ -17,6 +17,18 @@
         .conteudo.ativo {
             display: block;
         }
+        
+        .carousel-container {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .carousel-inner img {
+            height: 700px;
+            object-fit: cover;
+        }
+        
     </style>
 </head>
 
@@ -56,42 +68,43 @@
 
     <section id="inicio" class="conteudo ativo py-5 bg-light">
         <div class="container">
-            <div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-
-                    <div class="carousel-item active">
-                        <img src="{{ asset('imagens/imposto.png') }}" class="d-block w-100" alt="Contabilidade Geral">
-                        <div class="carousel-caption bg-dark bg-opacity-50 rounded">
-                            <h5 class="text-accent-theme">Contabilidade Geral</h5>
-                            <p class="text-white">Mantenha suas finanças em ordem com nossa contabilidade geral
-                                completa.</p>
+            <div class="carousel-container">
+                <div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{{ asset('imagens/imposto.png') }}" class="d-block w-100" alt="Contabilidade Geral">
+                            <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                                <h5 class="text-accent-theme">Contabilidade Geral</h5>
+                                <p class="text-white">Mantenha suas finanças em ordem com nossa contabilidade geral
+                                    completa.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{ asset('imagens/empresa.png') }}" class="d-block w-100" alt="Assessoria Fiscal">
+                            <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                                <h5 class="text-accent-theme">Assessoria Fiscal e Tributária</h5>
+                                <p class="text-white">Planejamento tributário inteligente para otimizar seus resultados.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{ asset('imagens/consultoria.png') }}" class="d-block w-100"
+                                alt="Consultoria Financeira">
+                            <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                                <h5 class="text-accent-theme">Consultoria Financeira</h5>
+                                <p class="text-white">Estratégias financeiras personalizadas para o crescimento do seu
+                                    negócio.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="{{ asset('imagens/empresa.png') }}" class="d-block w-100" alt="Assessoria Fiscal">
-                        <div class="carousel-caption bg-dark bg-opacity-50 rounded">
-                            <h5 class="text-accent-theme">Assessoria Fiscal e Tributária</h5>
-                            <p class="text-white">Planejamento tributário inteligente para otimizar seus resultados.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{ asset('imagens/consultoria.png') }}" class="d-block w-100"
-                            alt="Consultoria Financeira">
-                        <div class="carousel-caption bg-dark bg-opacity-50 rounded">
-                            <h5 class="text-accent-theme">Consultoria Financeira</h5>
-                            <p class="text-white">Estratégias financeiras personalizadas para o crescimento do seu
-                                negócio.</p>
-                        </div>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
             </div>
         </div>
     </section>
@@ -169,15 +182,15 @@
             <div class="row align-items-center">
 
                 <div class="col-md-6 mb-4 mb-md-0">
-                    <p class="text-white fs-5">
+                    <p class="fs-5" style="color:#8fbc8f">
                         Nosso escritório está de portas abertas para receber você com toda a atenção que merece.
                         Venha tomar um café conosco e conhecer mais sobre como podemos ajudar seu negócio!
                     </p>
-                    <address class="text-white fw-bold">
+                    <address class="fw-bold" style="color:#8fbc8f">
                         R. Laurindo Borges, 1984<br>
                         Campo Mourão – PR, 87303-240
                     </address>
-                    <p class="text-white">Será um prazer atendê-lo pessoalmente!</p>
+                    <p style="color:#8fbc8f">Será um prazer atendê-lo pessoalmente!</p>
                 </div>
 
                 <div class="col-md-6">
@@ -223,17 +236,49 @@
         </div>
     </section>
 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="footer-logo">
+                        <img src="{{ asset('imagens/logoAtualizada.png') }}" alt="Contabilidade Angelos">
+                    </div>
+                    <p>Soluções contábeis completas para o seu negócio prosperar.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/44997361375"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-links">
+                        <h5>Contato</h5>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt me-2"></i> R. Laurindo Borges, 1984 - Campo Mourão/PR</li>
+                            <li><i class="fas fa-phone me-2"></i> (44) 99736-1375</li>
+                            <li><i class="fas fa-envelope me-2"></i> contato@angeloscontabilidade.com.br</li>
+                            <li><i class="fas fa-clock me-2"></i> Seg-Sex: 08:00 - 18:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Contabilidade Angelos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
     <script>
         function mostrarSecao(id) {
-
             const secoes = document.querySelectorAll('.conteudo');
             secoes.forEach(secao => secao.classList.remove('ativo'));
-
-
             document.getElementById(id).classList.add('ativo');
         }
     </script>
 
+    <!-- Font Awesome para ícones -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
